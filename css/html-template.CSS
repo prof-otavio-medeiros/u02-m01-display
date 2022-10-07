@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+#container-main {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: blueviolet;
+    height: 10vh;
+}
+
+#container-flex-row {
+    display: flex;
+    height: 80vh;
+}
+
+#container-flex-row > main {
+    background-color: aqua;
+    flex: 1;
+}
+
+#container-flex-row > nav, aside {
+    background-color: antiquewhite;
+    width: 15vw;
+}

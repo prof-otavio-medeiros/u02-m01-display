@@ -1,28 +1,51 @@
 * {
-    margin: 0;
+  margin: 0;
 }
+
+p {
+  text-align: center;
+}
+
+/*
+#pid {
+  background-color: black;
+  color: darkgray;
+}
+
+.pclass {
+  background-color: green;
+  color: yellow;
+}
+
+p {
+  background-color: brown;
+  color: white;
+}
+*/
 
 #container-main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-header, footer {
-    background-color: blueviolet;
-    height: 10vh;
+header,
+footer {
+  background-color: blueviolet;
+  height: 10vh;
 }
 
 #container-flex-row {
-    display: flex;
-    height: 80vh;
+  display: flex;
+  height: 80vh;
 }
 
 #container-flex-row > main {
-    background-color: aqua;
-    flex: 1;
+  background-color: aqua;
+  flex: 1;
 }
 
-#container-flex-row > nav, aside {
-    background-color: antiquewhite;
-    width: 15vw;
+#container-flex-row > nav,
+aside {
+  background-color: antiquewhite;
+  width: 15vw;
 }

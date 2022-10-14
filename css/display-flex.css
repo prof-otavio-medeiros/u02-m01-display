@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#container-dislay {
+  background-color: bisque;
+  margin: 5px auto;
+  width: 360px;
+  height: 300px;
+  display: flex;
+}
+
+#container-dislay > div {
+  margin: 5px;
+  background-color: aquamarine;
+  /* min-width: 70px; */
+  width: 70px;
+  text-align: center;
+}
+
+/*
+  ===================================
+               CONTAINER
+  ===================================
+*/
+
+/*
+  flex-direction
+*/
+
+/* row */
+#container-dislay {
+  flex-direction: row;
+}
+
+/* row-reverse */
+/* #container-dislay {
+  flex-direction: row-reverse;
+} */
+
+/* column */
+/* #container-dislay {
+  flex-direction: column;
+} */
+
+/* column-reverse */
+/* #container-dislay {
+  flex-direction: column-reverse;
+} */
+
+/*
+  ===================================
+*/
+
+/*
+  flex-wrap
+  flex-flow <flex-direction> <flex-wrap>
+*/
+
+/* nowrap */
+/* #container-dislay {
+  flex-wrap: nowrap;
+} */
+
+/* wrap */
+/* #container-dislay {
+  flex-wrap: wrap;
+} */
+
+/* wrap-reverse */
+/* #container-dislay {
+  flex-wrap: wrap-reverse;
+} */
+
+/*
+  flex-flow
+*/
+
+/* row wrap-reverse */
+/* #container-dislay {
+  flex-flow: row wrap-reverse;
+} */
+
+/*
+  ===================================
+*/
+
+/*
+    justify-content
+*/
+
+/* flex-start */
+/* #container-dislay {
+  justify-content: flex-start;
+}
+#container-dislay > div:nth-child(n + 4) {
+  display: none;
+} */
+
+/* flex-end */
+/* #container-dislay {
+  justify-content: flex-end;
+}
+#container-dislay > div:nth-child(n + 4) {
+  display: none;
+} */
+
+/* center */
+/* #container-dislay {
+  justify-content: center;
+}
+#container-dislay > div:nth-child(n + 4) {
+  display: none;
+} */
+
+/* space-between */
+/* #container-dislay {
+  justify-content: space-between;
+}
+#container-dislay > div:nth-child(n + 4) {
+  display: none;
+} */
+
+/* space-around */
+/* #container-dislay {
+  justify-content: space-around;
+}
+#container-dislay > div:nth-child(n + 4) {
+  display: none;
+} */
+
+/* space-evenly */
+/* #container-dislay {
+  justify-content: space-evenly;
+}
+#container-dislay > div:nth-child(n + 4) {
+  display: none;
+} */
+
+/*
+  ===================================
+*/
+
+/*
+    align-items
+*/
+
+/* flex-start (DO NOT COMMENT) */
+#container-dislay {
+  align-items: flex-start;
+}
+
+/* flex-end */
+/* #container-dislay {
+  align-items: flex-end;
+} */
+
+/* center */
+/* #container-dislay {
+  align-items: center;
+} */
+
+/* stretch */
+/* #container-dislay {
+  align-items: stretch;
+} */
+
+/* baseline */
+/* #container-dislay {
+  align-items: baseline;
+}
+#container-dislay > div:nth-child(4) {
+  font-size: xx-large;
+} */
+
+/*
+  ===================================
+*/
+
+/*
+    align-content
+      -> atua sobre as linhas 
+      -> precisa de mútiplas linhas (wrap)
+*/
+
+/* flex-start */
+/* #container-dislay {
+  align-content: flex-start;
+}
+#container-dislay {
+  flex-wrap: wrap;
+} */
+
+/* flex-end */
+/* #container-dislay {
+  align-content: flex-end;
+}
+#container-dislay {
+  flex-wrap: wrap;
+} */
+
+/* center */
+/* #container-dislay {
+  align-content: center;
+}
+#container-dislay {
+  flex-wrap: wrap;
+} */
+
+/* stretch (NOT OK?) */
+/* #container-dislay {
+  align-content: stretch;
+}
+#container-dislay {
+  flex-wrap: wrap;
+} */
+
+/* space-between */
+/* #container-dislay {
+  align-content: space-between;
+}
+#container-dislay {
+  flex-wrap: wrap;
+} */
+
+/*
+  ===================================
+*/
+
+/*
+    row-gap
+    column-garp
+    gap <row-gap> <column-gap>
+*/
+
+/* row-gap */
+/* #container-dislay {
+  row-gap: 145px;
+}
+#container-dislay {
+  flex-wrap: wrap;
+} */
+
+/* column-gap */
+/* #container-dislay {
+  column-gap: 45px;
+}
+#container-dislay {
+  flex-wrap: wrap;
+} */
+
+/* column-gap */
+/* #container-dislay {
+  gap: 145px 45px;
+}
+#container-dislay {
+  flex-wrap: wrap;
+} */
+
+/*
+  ===================================
+                ITENS
+  ===================================
+*/
+
+/*
+  order
+    -> The default value for all itens is '0'
+    -> Negative numbers are valid
+*/
+/* #container-dislay > div:nth-child(4) {
+  order: -1;
+} */
+
+/*
+  ===================================
+*/
+
+/*
+  flex-grow
+    -> The default value for all itens is '0'
+    -> Negative numbers are not valid
+*/
+/* #container-dislay > div:nth-child(2) {
+  flex-grow: 1;
+}
+#container-dislay > div:nth-child(n + 4) {
+  display: none;
+} */
+
+/*
+  flex-shrink
+    -> The default value for all itens is '1'
+    -> Negative numbers are not valid
+*/
+/* #container-dislay > div {
+  width: 120px;
+}
+#container-dislay > div:nth-child(2) {
+  flex-shrink: 2
+}
+#container-dislay > div:nth-child(n + 6) {
+  display: none;
+} */

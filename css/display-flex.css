@@ -14,8 +14,8 @@
 #container-dislay > div {
   margin: 5px;
   background-color: aquamarine;
-  /* min-width: 70px; */
-  width: 70px;
+  width: fit-content;
+  height: fit-content;
   text-align: center;
 }
 
@@ -146,10 +146,10 @@
     align-items
 */
 
-/* flex-start (DO NOT COMMENT) */
-#container-dislay {
+/* flex-start */
+/* #container-dislay {
   align-items: flex-start;
-}
+} */
 
 /* flex-end */
 /* #container-dislay {
@@ -164,6 +164,9 @@
 /* stretch */
 /* #container-dislay {
   align-items: stretch;
+}
+#container-dislay > div{
+  height: auto;
 } */
 
 /* baseline */
@@ -208,12 +211,13 @@
   flex-wrap: wrap;
 } */
 
-/* stretch (NOT OK?) */
+/* stretch */
 /* #container-dislay {
   align-content: stretch;
-}
-#container-dislay {
   flex-wrap: wrap;
+}
+#container-dislay > div {
+  height: auto;
 } */
 
 /* space-between */
